@@ -60,9 +60,7 @@ class AdministradorProductosTest {
     @Test
     void descuentoComidaVencidaHoy() {
         double descuento = 200;
-        LocalDate fechaVencimiento = LocalDate.of(2022,4,30);
 
-        //Comida c1 = new Comida(103, "Sanduche", 2000, LocalDate.now().plusDays(2));
         Comida c1 = new Comida(103, "Sanduche", 2000, LocalDate.now());
 
         assertEquals(descuento, c1.getDescuento());
